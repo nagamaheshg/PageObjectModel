@@ -1,0 +1,63 @@
+####Custom CSS Selector:
+
+1. id -> htmltag#id  (or) #id
+
+2. class -> htmltag.className (or) .className (or) .class1.class2.class3 (or) htmltag.class1.class2.class3
+
+3. Parent node:
+
+    syntax: 
+        parent node>childnode
+    
+    ul#categories>li
+
+4. CSS with two Attributes:
+
+    htmltag[id='value']
+
+    input[id='username'][type='email']  
+
+5. contains in CSS:
+
+    input[id*='user']
+    input[id*='name']
+
+6. start-with:
+
+    input[id^='user']
+
+7. end-with:
+
+    input[id$='user']
+
+8. comma in css:
+
+    div.private-form__input-wrapper, input#username
+
+9. first-of-type:
+
+    gives all li's under ul tag.
+
+    ul#categories > li
+
+    it will give first li out off
+
+    ul#categories>li:first-of-type
+
+10. last-of-type:
+
+    ul#categories>li:last-of-type
+
+11. nth-of-type:
+
+    # index 
+    ul#categories>li:nth-of-type(4)  
+
+12. sibling of element:
+
+    div.private-form__input-wrapper+div
+
+    div.private-from__input-wrapper+div.private-form_meta
+
+    #following sibling
+    ul#categories > li:nth-of-type(3)+li
