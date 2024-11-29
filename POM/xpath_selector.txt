@@ -1,0 +1,30 @@
+#### xpath
+
+//input[@name='username']
+//input[@id='Password']
+//input[@type='submit']
+
+#### Find xpath for links without using contains()
+
+//a[text()='Features']
+
+#### with contains
+
+// a[contains(text(),'Features')]
+
+#### and operator
+
+//button[@type='button' and @class='btn']
+
+//div[@class='dropdown']//button[@type='button' and @class='btn btn-secondary dropdown-toggle' and @id='dropdownMenuButton']
+
+//input[@class='css-lcwyjr8 r-homxoj r-ubezar r-10paoce r-13qz1uu' and not(@value='Select Destination')]
+
+#### Preceding Sibling 
+
+//a[text()='test2 test2']//parent::td[@class='datalistrow']//preceding-sibling::td[@class='datalistrow']//input
+
+
+#### Tabel:
+
+//*[@id='Vcontactform']/table/tbody/tr[6]/td[1]/input
